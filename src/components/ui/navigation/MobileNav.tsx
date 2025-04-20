@@ -25,6 +25,8 @@ export default function MobileNav() {
                 width={50}
                 height={50}
                 className="fixed top-2 left-4 z-50"
+                priority
+                loading="eager"
             />
             <Button
                 isIconOnly
