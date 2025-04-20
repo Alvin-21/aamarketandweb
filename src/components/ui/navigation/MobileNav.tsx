@@ -19,24 +19,23 @@ export default function MobileNav() {
 
     return (
         <>
-            <div className="flex justify-between px-3 pt-2">
-                <Image
-                    src="/logo.png"
-                    alt="Company Logo"
-                    width={50}
-                    height={50}
-                />
-                <Button
-                    isIconOnly
-                    variant="light"
-                    aria-controls="mobile-navigation"
-                    aria-expanded={isMenuOpen}
-                    className="text-white"
-                    onPress={() => setIsMenuOpen(!isMenuOpen)}
-                >
-                    <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="h-6 w-6" />
-                </Button>
-            </div>
+            <Image
+                src="/logo.png"
+                alt="Company Logo"
+                width={50}
+                height={50}
+                className="fixed top-2 left-4 z-50"
+            />
+            <Button
+                isIconOnly
+                variant="light"
+                aria-controls="mobile-navigation"
+                aria-expanded={isMenuOpen}
+                className="text-white fixed top-2 right-4 z-50"
+                onPress={() => setIsMenuOpen(!isMenuOpen)}
+            >
+                <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="h-6 w-6" />
+            </Button>
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div
@@ -46,6 +45,7 @@ export default function MobileNav() {
                         animate={{ x: 0 }}
                         exit={{ x: "-100%" }}
                         transition={{ type: "tween", duration: 0.4 }}
+                        className="fixed inset-0 w-full h-full bg-dark-blue z-40"
                     >
                         <Sparkles />
                         <h1 className="text-2xl pl-7 pb-3">Site</h1>
@@ -82,7 +82,7 @@ export default function MobileNav() {
                                 </Button>
                             ))}
                         </div>
-                        <div className='flex justify-center gap-0 relative bottom-3'>
+                        <div className='flex justify-center gap-0 relative -bottom-12 md:bottom-0'>
                             <span className='text-xs mx-2'>Copyright<FontAwesomeIcon icon={faCopyright} className='inline h-3 w-3 mx-1' />{new Date().getFullYear()} A&A Market and Web. All Rights Reserved.</span>
                         </div>
                     </motion.div>

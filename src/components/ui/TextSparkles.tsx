@@ -4,7 +4,7 @@ import { SparklesCore } from "../ui/sparkles";
 
 export function Sparkles() {
     return (
-        <div className="h-[10rem] md:h-[12rem] w-full flex flex-col items-center justify-start overflow-hidden">
+        <div className="h-[10rem] md:h-[12rem] w-full mt-3 flex flex-col items-center justify-start overflow-hidden">
             <h1 className="md:text-7xl text-3xl lg:text-9xl pb-1 font-bold text-center text-white relative z-20">
                 A & A
             </h1>
