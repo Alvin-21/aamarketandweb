@@ -17,6 +17,16 @@ const config: Config = {
                     "0%": { transform: "rotate(0deg) scale(10)" },
                     "100%": { transform: "rotate(-360deg) scale(10)" },
                 },
+                bounce: {
+                    "0%, 100%": {
+                        transform: "translateX(-25%)",
+                        "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+                    },
+                    "50%": {
+                        transform: "translateX(0)",
+                        " animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+                    },
+                },
             },
             colors: {
                 'dark-blue': '#001f3f',

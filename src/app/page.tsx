@@ -1,6 +1,7 @@
 import { ShootingStarsAndStarsBackground } from "@/components/ui/ShootingStarsAndStarsBackground";
 import Image from "next/image";
 import Services from "@/components/page/home/Services";
+import About from "@/components/page/home/About";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
           />
         </figure>
         <Services />
+      </section>
+      <section>
+        <About />
       </section>
     </>
   );
