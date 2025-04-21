@@ -31,6 +31,7 @@ const config: Config = {
             colors: {
                 'dark-blue': '#001f3f',
                 'blue-200': '#2e95ff',
+                'blue-100': '#43a0ff',
             },
         },
     },
