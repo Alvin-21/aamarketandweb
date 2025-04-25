@@ -32,6 +32,7 @@ const config: Config = {
                 'dark-blue': '#001f3f',
                 'blue-200': '#2e95ff',
                 'blue-100': '#43a0ff',
+                'orange': '#F0892E',
             },
         },
     },

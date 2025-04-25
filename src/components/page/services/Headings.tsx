@@ -24,7 +24,7 @@ export default function Headings() {
                 initial={{ x: "150%" }}
                 animate={{ x: 0 }}
                 transition={{ type: "spring", duration: 1, bounce: 0.7, delay: 1 }}
-                className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-[#F0892E] via-white to-blue-100"
+                className="bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r from-orange via-white to-blue-100"
             >
                 Serious Results
             </motion.h1>

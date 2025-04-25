@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function WebServices() {
     return (
