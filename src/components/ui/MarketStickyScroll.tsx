@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "../ui/sticky-scroll-reveal";
+import { StickyScroll } from "./sticky-scroll-reveal";
 
 
 const content = [
@@ -51,10 +51,10 @@ const content = [
     ),
   },
 ];
-export function WebStickyScroll() {
+export function MarketStickyScroll() {
   return (
-    <div className="w-full py-4">
-      <StickyScroll content={content} />
+    <div className="w-full pt-4">
+      <StickyScroll content={content} heading="MARKET SERVICES" />
     </div>
   );
 }

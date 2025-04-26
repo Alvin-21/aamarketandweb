@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 export default function MarketServices() {
     return (
         <>
-            <h1 className="ml-5 mb-5">Market Services</h1>
+            <h1 className="ml-5 mb-5 sm:hidden">Market Services</h1>
             {content.map((service, index) => (
-                <div key={service.title} className="mb-5">
+                <div key={service.title} className="mb-5 sm:hidden">
                     <div className={clsx(
                         "flex justify-center px-5 mt-10",
                         {
@@ -29,7 +29,7 @@ export default function MarketServices() {
                     <p className="mx-5 mt-4">{service.description}</p>
                     {index < 3 && (
                         <div
-                            className="sm:hidden bg-orange h-0.5 w-1/4 mt-8 flex justify-self-center rounded-3xl"
+                            className=" bg-orange h-0.5 w-1/4 mt-8 flex justify-self-center rounded-3xl"
                         >
                             <motion.div
                                 initial={{ opacity: 0 }}
