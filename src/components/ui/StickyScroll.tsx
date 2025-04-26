@@ -51,7 +51,7 @@ const content = [
     ),
   },
 ];
-export function StickyScrollReveal() {
+export function WebStickyScroll() {
   return (
     <div className="w-full py-4">
       <StickyScroll content={content} />
