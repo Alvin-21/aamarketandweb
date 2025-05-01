@@ -11,6 +11,7 @@ const config: Config = {
         extend: {
             animation: {
                 rotate: "rotate 3s linear infinite",
+                "meteor-effect": "meteor 5s linear infinite",
             },
             keyframes: {
                 rotate: {
@@ -25,6 +26,14 @@ const config: Config = {
                     "50%": {
                         transform: "translateX(0)",
                         " animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+                    },
+                },
+                meteor: {
+                    "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+                    "70%": { opacity: "1" },
+                    "100%": {
+                        transform: "rotate(215deg) translateX(-500px)",
+                        opacity: "0",
                     },
                 },
             },
