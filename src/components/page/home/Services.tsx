@@ -25,10 +25,9 @@ export default function Services() {
                 viewport={{ once: true }}
                 className="text-xl tracking-wide leading-relaxed"
             >
-                We provide several services to help improve your business.
-                Among them is digital marketing. In the digital era like today,
-                making presence is very important to improve your business
-                with a special strategy that we will provide.
+                We provide several services to help <span className="italic">improve your business. </span>Among them is <span className="font-semibold text-blue-50">digital marketing</span>. In the <span className="italic">digital era</span> like today,
+                <span className="font-semibold text-blue-50"> making a presence</span> is very important to <span className="font-semibold text-blue-50">grow your business </span>
+                with a <span className="italic">special strategy</span> that <span className="font-semibold text-blue-50">we&apos;ll tailor just for you</span>.
             </motion.p>
             <motion.div
                 initial={{ opacity: 0 }}

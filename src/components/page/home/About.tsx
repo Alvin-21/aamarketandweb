@@ -25,9 +25,8 @@ export default function About() {
                 viewport={{ once: true }}
                 className="text-xl tracking-wide leading-relaxed"
             >
-                We are passionate about empowering
-                businesses to thrive in the digital world. With a
-                unique blend of marketing strategy and cutting-edge web development, we specialise in delivering tailored solutions that help you stand out, engage your audience, and drive growth.
+                We are <span className="italic">passionate</span> about <span className="font-semibold text-blue-50">empowering
+                </span> businesses to <span className="">thrive in the digital world</span>. With a <span className="italic">unique blend</span> of <span className="font-semibold text-blue-50">marketing strategy</span> and <span className="italic">cutting-edge</span><span className="font-semibold text-blue-50"> web development</span>, we specialise in delivering <span className="font-semibold text-blue-50">tailored solutions</span> that help you <span className="font-semibold text-blue-50">stand out</span>, <span className="italic">engage your audience</span>, and <span className="font-semibold text-blue-50">drive growth</span>.
             </motion.p>
             <motion.div
                 initial={{ opacity: 0 }}
