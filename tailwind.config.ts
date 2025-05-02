@@ -43,6 +43,7 @@ const config: Config = {
                 'blue-100': '#43a0ff',
                 'blue-50': '#6cc3ff',
                 'orange': '#F0892E',
+                'orange-50': '#f4ac6c',
             },
         },
     },
