@@ -16,6 +16,14 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function MobileNav() {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const prevPathname = React.useRef(pathname);
+
+    React.useEffect(() => {
+        if (prevPathname.current !== pathname) {
+            setIsMenuOpen(false);
+            prevPathname.current = pathname;
+        }
+    }, [pathname]);
 
     return (
         <>
@@ -24,7 +32,7 @@ export default function MobileNav() {
                 alt="Company Logo"
                 width={50}
                 height={50}
-                className="fixed top-2 left-4 z-50"
+                className="fixed top-2 left-4 z-[60]"
                 priority
                 loading="eager"
             />
@@ -33,7 +41,7 @@ export default function MobileNav() {
                 variant="light"
                 aria-controls="mobile-navigation"
                 aria-expanded={isMenuOpen}
-                className="text-white fixed top-2 right-4 z-50"
+                className="text-white fixed top-2 right-4 z-[60]"
                 onPress={() => setIsMenuOpen(!isMenuOpen)}
             >
                 <FontAwesomeIcon icon={isMenuOpen ? faXmark : faBars} className="h-6 w-6" />
@@ -47,7 +55,7 @@ export default function MobileNav() {
                         animate={{ x: 0 }}
                         exit={{ x: "-100%" }}
                         transition={{ type: "tween", duration: 0.4 }}
-                        className="fixed inset-0 w-full h-full bg-dark-blue z-40"
+                        className="fixed inset-0 w-full h-full bg-dark-blue z-50"
                     >
                         <Sparkles />
                         <h1 className="text-2xl pl-7 pb-3">Site</h1>
