@@ -16,7 +16,7 @@ export function MeteorsShow() {
                             viewBox="0 0 24 24"
                             strokeWidth="1.5"
                             stroke="currentColor"
-                            className="h-2 w-2 text-gray-300"
+                            className="h-2 w-2 text-gray-200"
                         >
                             <path
                                 strokeLinecap="round"
@@ -25,17 +25,17 @@ export function MeteorsShow() {
                             />
                         </svg>
                     </div>
-                    <h1 className="relative z-50 mb-4 text-2xl font-bold text-white">
+                    <h1 className="relative z-40 mb-4 text-2xl font-bold text-white">
                         Let&apos;s Build Something Together
                     </h1>
-                    <p className="relative z-50 mb-4 text-lg font-normal text-slate-400">
-                        We believe your brand has a story worth telling — and we&apos;d love to help you tell it. If you're looking for a partner who genuinely cares about your success, you&apos;re in the right place.
+                    <p className="relative z-40 mb-4 text-xl font-normal text-slate-300">
+                        We believe your brand has a <span className="italic">story worth telling</span> — and we&apos;d love to help you tell it. If you're looking for a partner who <span className="font-semibold text-blue-50">genuinely cares</span> about <span className="font-semibold text-green-50">your success</span>, you&apos;re in the <span className="italic">right place</span>.
                     </p>
                     <Button
                         as={Link}
                         href="/contact"
                         variant="bordered"
-                        className="rounded-lg border border-gray-500 px-4 py-1 text-gray-300"
+                        className="rounded-lg border border-gray-300 px-4 py-1 text-lg text-gray-200"
                     >
                         Talk to Us
                     </Button>
