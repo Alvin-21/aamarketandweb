@@ -8,7 +8,9 @@ export default function Page() {
     return (
         <div className="px-4 relative top-16">
             <h1 className="text-2xl font-bold">Reach Out</h1>
-            <p className="text-lg tracking-wide leading-relaxed mt-5 w-full">Ready to grow your brand online? Whether you’re just starting out or looking to take things to the next level, we’re here to help. Drop us a message — no pressure, no jargon — just a friendly chat about how we can support your goals. Let’s create something great together!</p>
+            <p className="text-lg tracking-wide leading-relaxed mt-5 w-full">
+                <span className="font-semibold text-blue-50">Ready to grow your brand online?</span> Whether you&apos;re <span className="italic">just starting out</span> or <span className="italic">looking to take things to the next level</span>, we&apos;re here to help. <span className="font-semibold text-blue-50">Drop us a message</span> — <span className="italic">no pressure, no jargon</span> — just a <span className="italic">friendly chat</span> about how we can support your goals. <span className="font-semibold text-blue-50">Let&apos;s create something great together!</span>
+            </p>
             <ContactForm />
             <h1 className="text-2xl mt-10 font-bold">Get in Touch</h1>
             <div className="flex mt-5 items-center text-lg">
