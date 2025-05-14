@@ -29,7 +29,7 @@ export function MeteorsShow() {
                         Let&apos;s Build Something Together
                     </h1>
                     <p className="relative z-40 mb-4 text-xl font-normal text-slate-300">
-                        We believe your brand has a <span className="italic">story worth telling</span> — and we&apos;d love to help you tell it. If you're looking for a partner who <span className="font-semibold text-blue-50">genuinely cares</span> about <span className="font-semibold text-green-50">your success</span>, you&apos;re in the <span className="italic">right place</span>.
+                        We believe your brand has a <span className="italic">story worth telling</span> — and we&apos;d love to help you tell it. If you&apos;re looking for a partner who <span className="font-semibold text-blue-50">genuinely cares</span> about <span className="font-semibold text-green-50">your success</span>, you&apos;re in the <span className="italic">right place</span>.
                     </p>
                     <Button
                         as={Link}

@@ -3,14 +3,18 @@ import { cn } from "@/lib/utils";
 import { motion } from "motion/react";
 import React from "react";
 
-export const Meteors = ({
+export function Meteors({
     number,
     className,
 }: {
     number?: number;
     className?: string;
-}) => {
-    const meteors = new Array(number || 20).fill(true);
+}) {
+    const [meteors, setMeteors] = React.useState<number[]>([]);
+
+    React.useEffect(() => {
+        setMeteors(new Array(number || 20).fill(true));
+    }, [number]);
 
     return (
         <motion.div
@@ -18,17 +22,12 @@ export const Meteors = ({
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            {meteors.map((el, idx) => {
+            {meteors.map((_, idx) => {
                 const meteorCount = number || 20;
                 // Calculate position to evenly distribute meteors across container width
                 const position = idx * (800 / meteorCount) - 400; // Spread across 800px range, centered
-                const [randAnimationDelay, setRandAnimationDelay] = React.useState("0s");
-                const [randAnimationDuration, setRandAnimationDuration] = React.useState("0s");
-
-                React.useEffect(() => {
-                    setRandAnimationDelay(Math.random() * 5 + "s");
-                    setRandAnimationDuration(Math.floor(Math.random() * (10 - 5) + 5) + "s");
-                }, [])
+                const randAnimationDelay = Math.random() * 5 + "s"; // Random delay between 0-5s
+                const randAnimationDuration = Math.floor(Math.random() * (10 - 5) + 5) + "s"; // Random duration between 5-10s
 
                 return (
                     <span
@@ -41,8 +40,8 @@ export const Meteors = ({
                         style={{
                             top: "-40px", // Start above the container
                             left: position + "px",
-                            animationDelay: randAnimationDelay, // Random delay between 0-5s
-                            animationDuration: randAnimationDuration, // Keep some randomness in duration
+                            animationDelay: randAnimationDelay,
+                            animationDuration: randAnimationDuration,
                         }}
                     ></span>
                 );

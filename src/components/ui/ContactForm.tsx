@@ -3,7 +3,6 @@
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Input, Textarea } from "@heroui/react";
-import { motion } from "framer-motion";
 
 export default function ContactForm() {
     return (
