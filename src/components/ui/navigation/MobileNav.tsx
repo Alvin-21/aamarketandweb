@@ -30,9 +30,9 @@ export default function MobileNav() {
             <Image
                 src="/logo.png"
                 alt="Company Logo"
-                width={50}
-                height={50}
-                className="fixed top-2 left-4 z-[60]"
+                width={30}
+                height={30}
+                className="fixed top-3 left-4 z-[60]"
                 priority
                 loading="eager"
             />
