@@ -2,6 +2,7 @@ import MarketServices from "@/components/page/services/MarketServices";
 import WebServices from "@/components/page/services/WebServices";
 import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 import { MarketStickyScroll } from "@/components/ui/MarketStickyScroll";
+import { MeteorsShow } from "@/components/ui/MeteorsShow";
 import { WebStickyScroll } from "@/components/ui/WebStickyScroll";
 
 export default function Page() {
@@ -17,6 +18,9 @@ export default function Page() {
             <div className="hidden sm:block w-full h-28"></div>
             <MarketServices />
             <MarketStickyScroll />
+            <section className="mb-5 grid justify-center">
+                <MeteorsShow />
+            </section>
         </>
     );
 }

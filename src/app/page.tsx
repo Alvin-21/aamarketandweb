@@ -2,6 +2,7 @@ import { ShootingStarsAndStarsBackground } from "@/components/ui/ShootingStarsAn
 import Image from "next/image";
 import Services from "@/components/page/home/Services";
 import About from "@/components/page/home/About";
+import { MeteorsShow } from "@/components/ui/MeteorsShow";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section>
         <About />
+      </section>
+      <section className="my-10 grid justify-center">
+        <MeteorsShow />
       </section>
     </>
   );
