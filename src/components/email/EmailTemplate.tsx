@@ -30,13 +30,13 @@ export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
         <Html>
             <Body>
                 <a href="https://aamarketandweb.vercel.app/" target="_blank">
-                    <Img src="/static/images/Logo-1.jpeg" alt="Company Logo" width="200" />
+                    <img src="/static/images/Logo-1.jpeg" alt="Company Logo" width="200" />
                 </a>
                 <Section className="bg-blue-200 w-full h-[1px] rounded-[2px] mt-5" />
                 <Heading className="text-2xl text-blue-200">New Message</Heading>
-                <p>Dear <span className="text-blue-500 font-semibold">A&A</span>,</p>
-                <p>{message}</p>
-                <div className="flex flex-col gap-1">
+                <p className="text-lg">Dear <span className="text-blue-500 font-semibold">A&A</span>,</p>
+                <p className="text-lg">{message}</p>
+                <div className="flex flex-col gap-1 text-lg">
                     <span>Best Regards,</span>
                     <span>{fullName}</span>
                 </div>

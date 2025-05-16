@@ -9,6 +9,7 @@ import * as React from "react";
 import { Tailwind } from "@react-email/tailwind";
 
 export default function EmailTemplate() {
+    const baseURL = process.env.BASE_URL;
     return (
         <Tailwind
             config={{
@@ -24,13 +25,13 @@ export default function EmailTemplate() {
             <Html>
                 <Body>
                     <a href="https://aamarketandweb.vercel.app/" target="_blank">
-                        <Img src="/static/images/Logo-1.jpeg" alt="Company Logo" width="200" />
+                        <img src={`${baseURL}/images/Logo-1.jpeg`} alt="Company Logo" width="200" />
                     </a>
                     <Section className="bg-blue-200 w-full h-[1px] rounded-[2px] mt-5" />
                     <Heading className="text-2xl text-blue-200">New Message</Heading>
-                    <p>Dear <span className="text-blue-500 font-semibold">A&A</span>,</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.</p>
-                    <div className="flex flex-col gap-1">
+                    <p className="text-lg">Dear <span className="text-blue-500 font-semibold">A&A</span>,</p>
+                    <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ornare risus vel mollis pharetra. Aliquam feugiat mattis neque et efficitur.</p>
+                    <div className="flex flex-col gap-1 text-lg">
                         <span>Best Regards,</span>
                         <span>John Doe</span>
                     </div>
