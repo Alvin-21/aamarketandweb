@@ -40,7 +40,7 @@ export async function sendEmail(prevState: State | undefined, formData: FormData
     try {
         const resend = new Resend(process.env.RESEND_API_KEY);
         const { data } = await resend.emails.send({
-            from: 'Contact <onboarding@resend.dev>',
+            from: 'Client <onboarding@resend.dev>',
             to: process.env.MY_EMAIL as string,
             subject: `General Enquiry from ${fullName}`,
             react: await EmailTemplate(validatedFields.data),
