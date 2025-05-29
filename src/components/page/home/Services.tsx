@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Services() {
     return (
-        <article className="flex flex-col gap-4 p-4">
+        <article className="flex flex-col gap-4 p-4 lg:max-w-xl">
             <motion.h1
                 initial={{ x: "-100%" }}
                 whileInView={{ x: 0 }}
