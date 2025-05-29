@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 export default function WebServices() {
     return (
         <>
-            <h1 className="ml-5 mb-5 sm:mb-0 sm:hidden text-3xl font-bold">Web Services</h1>
+            <h1 className="ml-5 mb-5 sm:mb-0 md:hidden text-3xl font-bold">Web Services</h1>
             {content.map((service, index) => (
-                <div key={service.title} className="mb-5 sm:hidden">
+                <div key={service.title} className="mb-5 md:hidden">
                     <div className={clsx(
                         "flex justify-center px-5 mt-10",
                         {
