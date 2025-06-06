@@ -27,7 +27,7 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={onSubmit} className="flex flex-col gap-5 mt-8 max-w-lg mx-auto">
+        <form onSubmit={onSubmit} className="flex flex-col gap-5 lg:gap-8 mt-8 max-w-lg mx-auto">
             <Alert
                 variant="solid"
                 isClosable
