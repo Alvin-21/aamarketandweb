@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
 import MobileNav from "@/components/ui/navigation/MobileNav";
+import DesktopNav from "@/components/ui/navigation/DesktopNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <MobileNav />
+          {/* <MobileNav /> */}
+          <DesktopNav />
           <main>{children}</main>
         </Providers>
       </body>
